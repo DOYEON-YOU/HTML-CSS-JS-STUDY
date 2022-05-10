@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {
+      margin: 0;
+      width: 100vw;
+    }
+
+    header {
+      background-color: white;
+      height: 50px;
+    }
+
+    #line {
+      height: 1px;
+      width: 100vw;
+      background-color: gray;
+    }
+    
+    .a {
+      display: inline-block;
+      height: 550px;
+      width: 360px;
+      position: relative;
+    }
+
+    .postIt {
+      display: inline-block;
+      position:absolute;
+      background-color: rgb(209, 209, 60);
+      width: 360px;
+      height: 500px;
+      margin-top: 30px;
+    }
+
+    .sticker {
+      display: inline;
+      position: absolute;
+      background-color: rgba(121, 62, 62, 0);
+      width: 50px;
+      height: 80px;
+      transform: rotate(16deg);
+      margin-left: 170px;
+      z-index: 1;
+      box-shadow: 1px 1px 3px black;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-size: 40px; top: 4px; left: 4px;">+</div>
+  </header>
+  <div id="line"></div>
+  <div id="postItArea">
+    <div class="a">
+      <span class="sticker"></span>
+      <span class="postIt"></sp>
+    </div>
+    <div class="a">
+      <div class="sticker"></div>
+      <div class="postIt"></div>
+    </div>
+  </div>
+  <script>
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <script>
+    const boxEl = document.querySelector(".box");
+    console.log(boxEl.textContent); // 콘솔창에 1이 출력됨 
+
+    boxEl.textContent = "hello!"; // boxEl에 들어있는 box라는 클래스의 첫 번째 요소를 hello!라고 바꾸어 줌
+    console.log(boxEl.textContent); // 콘솔창에 1, hello!가 출력됨
+  </script>
+</body>
+
+</html>

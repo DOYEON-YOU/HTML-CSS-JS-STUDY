@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: rgb(120, 30, 255);
+  text-shadow: 1px 1px 3px rgba(184, 149, 255, 0.484);
+}
+
+.container {
+  /* 
+    중앙 정렬하고 싶은 요소를 감싼 div에 뷰포트값을 지정해 주고
+    align-items를 center, display를 flex로 지정
+  */
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#loginBack {
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid rgb(212, 187, 255);
+  box-shadow: 2px 2px 8px rgb(227, 205, 255);
+  width: 360px;
+  height: 600px;
+}
+
+.socialClub {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.socialClub > div{
+  float: left;
+  margin-left: 20px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(133, 67, 255, 0.475);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.socialClub div img {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.socialClub div:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: rgb(215, 193, 255);
+  box-shadow: 1px 1px 5px rgb(146, 73, 255);
+  transition: all 0.5s;
+}
+
+.socialClub div:nth-child(1):active > a > img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+.socialClub div:nth-child(2):active > a > img {
+  width: 25px;
+  height: 25px;
+  margin-top: 12px;
+  margin-left: 2px;
+  transition: all 0.5s;
+}
+
+.socialClub div:nth-child(3):active > a > img {
+  width: 25px;
+  height: 25px;
+  margin-top: 13px;
+  transition: all 0.5s;
+}
+
+.socialClub :nth-child(1) > a > img {
+  /* 인스타그램 로고 */
+  width: 35px;
+  height: 35px;
+  margin-top: 8px;
+}
+
+.socialClub :nth-child(2) > a > img {
+  /* 페이스북 로고 */
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 2px;
+}
+
+.socialClub :nth-child(3) > a > img {
+  /* 트위터 로고 */
+  width: 30px;
+  height: 30px;
+  margin-top: 11px;
+  margin-left: 2px;
+}
+
+.line {
+  margin-top: 50px;
+  height: 1px;
+  background-color: rgb(120, 30, 255);
+}
+
+#loginForm {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textArea {
+  height: 4vh;
+  width: 300px;
+  margin-top: 10px;
+  border: 1px solid rgb(172, 104, 255);
+  transition: all 0.5s;
+  color: rgb(184, 137, 255);
+  font-size: 15px
+}
+
+.textArea:focus {
+  outline: 2px solid rgb(172, 104, 255);
+  transition: all 0.3s;
+  color: white;
+  background-color: rgb(172, 104, 255);
+}
+
+#login div {
+  margin-left: 8px;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: bold;
+  color: rgb(65, 65, 65);
+}
+
+#loginForm button {
+  width: 260px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(120, 30, 255);
+  color: rgb(255, 255, 255);
+  border: white;
+  outline: none;
+  font-weight: bolder;
+  font-size: 25px;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 6px rgb(160, 104, 255);
+}
+
+#loginForm button:hover {
+  cursor: pointer;
+  background-color: rgb(135, 55, 255);
+  transition: all 0.3s;
+}
+
+#loginForm button:active {
+  font-size: 23px;
+  background-color: rgb(113, 19, 255);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgba(176, 131, 255, 0.498);
+}
+
+label {
+  display: inline-block;
+  margin-right: 80px;
+  font-size: 15px;
+  color: rgb(156, 156, 156);
+  font-weight: light;
+}
+
+#forgot {
+  display: inline-block;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(184, 184, 184);
+  font-weight: bolder;
+  color: rgb(184, 184, 184);
+  transition: all 0.5s;
+}
+
+#forgot:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+#rememberCheck {
+  accent-color: rgb(184, 184, 184);
+}

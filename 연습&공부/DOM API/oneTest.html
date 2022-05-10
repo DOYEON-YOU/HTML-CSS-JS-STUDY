@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box">box</div>
+  <script>
+    const boxEl = document.querySelector(".box");
+
+    console.log(boxEl);
+
+    boxEl.addEventListener("click", function () { //boxEl이라는 변수를 클릭했을 때 함수에 있는 내용 실행
+      console.log("click!"); // 콘솔창에 click!이 표시됨
+      boxEl.classList.add("active"); // active라는 값을 boxEl 변수에 넣어줌
+
+      boxEl.classList.remove("box"); // box라는 값을 boxEl에서 삭제함
+      const hasActive = boxEl.classList.contains("box"); // active라는 값이 boxEl 변수에 있는지의 여부 확인 (boolean type)
+      console.log(hasActive); // active라는 값이 있기 때문에 true가 표시됨
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function solution(n){
+      if(n%2==0){
+        let repeat=n / 2;
+        let waterMelon = '수박';
+        return waterMelon.repeat(repeat);
+      } else if(n%2==1){
+          let repeat=n / 2;
+          repeat = Math.floor(repeat);
+          let waterMelon = '수박';
+          return waterMelon.repeat(repeat)+'수';
+        } else if(n==1){
+          return '수';
+        }
+    }
+  </script>
+</body>
+</html>

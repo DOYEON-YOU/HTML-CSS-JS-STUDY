@@ -1,0 +1,131 @@
+* {
+  text-align: center;
+  background-color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark {
+  margin-top: 15%;
+}
+
+h1{
+  font-weight: bolder;
+  font-size: 50px;
+  background-color: rgb(255, 191, 107);
+  color: white;
+  width: 320px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 3px rgb(255, 178, 77);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.599);
+}
+
+h1:hover{
+  cursor: default;
+}
+
+#hint {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  width: 950px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 20px;
+  padding: 10px 0px;
+  color: rgb(255, 171, 60);
+  transition: all 0.5s;
+  box-shadow: 1px 1px 5px rgb(255, 171, 60);
+}
+
+#hint:hover{
+  color: white;
+  text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.654);
+  background-color: rgb(255, 171, 60);
+  cursor: default;
+  transition: all 0.5s;
+}
+
+.inputAdd {
+  width: 250px;
+  height: 20px;
+  background-color: white;
+  border: 4px solid rgba(255, 170, 60, 0.713); 
+  padding:  5px;
+  border-radius: 20px;
+  text-align: left;
+  transition: all 0.5s;
+  color: rgb(255, 145, 0);
+  font-weight: bold;
+}
+
+.inputAdd:focus {
+  outline: none;
+  background-color: rgb(255, 191, 107);
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s;
+  place-content: none;
+}
+
+.inputAdd::placeholder {
+  color: rgba(255, 145, 0, 0.686);
+  font-weight: lighter;
+}
+
+.inputAdd:focus::-webkit-input-placeholder{
+  color: white;
+}
+
+#addAdd{
+  margin-top: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: rgb(255, 171, 60);
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  border: white;
+  outline: 3px solid white;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.45);
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px rgb(255, 171, 60);
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+
+#addAdd:hover {
+  background-color: rgba(255, 170, 60, 0.507);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#addAdd:active {
+  background-color: white;
+  text-shadow: 1px 1px 5px rgba(255, 170, 60, 0.772);
+  color: rgb(255, 171, 60);
+  outline: 3px solid rgb(255, 171, 60);
+  box-shadow: 0px 0px 2px 2px 6px rgb(255, 171, 60);
+}
+
+#address {
+  margin-top: 20px;
+}
+
+#addName {
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bolder;
+  color: rgba(255, 145, 0, 0.686);
+  font-size: 20px;
+  box-shadow: 1px 1px 4px rgb(200, 120, 15);
+  border: 1px solid rgb(255, 171, 60);
+}

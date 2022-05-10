@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myDream.html</title>
+  <link rel="stylesheet" href="./home.css">
+  
+</head>
+
+<body>
+
+  <nav id="navigation">
+    <img id="logo" src="./images/logo/1.png" alt="logo">
+    <div id="nav">
+      <div class="navEl" onclick="scrollToElement('1p')">MENU1</div>
+      <div class="navEl" onclick="scrollToElement('2p')">MENU2</div>
+      <div class="navEl" onclick="scrollToElement('3p')">MENU3</div>
+      <div class="navEl" onclick="scrollToElement('4p')">MENU4</div>
+    </div>
+  </nav>
+
+  <div id="container">
+    <div class="sec" id="1p" style="background-color:rgb(255, 255, 255);">first section</div>
+    <div class="sec" id="2p" style="background-color:rgb(161, 161, 161);">second section</div>
+    <div class="sec" id="3p" style="background-color:rgb(95, 95, 95);">third section</div>
+    <div class="sec" id="4p" style="background-color:rgb(65, 65, 65);">fourth section</div>
+  </div>
+
+  <script src="./home.js"></script>
+</body>
+
+</html>

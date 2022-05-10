@@ -1,0 +1,87 @@
+body {
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(230, 94, 139);
+  margin-top: 500px;
+  font-weight: bolder;
+  font-size: 50px;
+  text-shadow: 4px 4px white;
+}
+
+#dropDownMenu {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 90vw;
+  height: 40px;
+}
+
+.menu {
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  width: 90vw;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid palevioletred;
+  font-size: 20px;
+  font-weight: bolder;
+  color: palevioletred;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.menuNum{
+  text-shadow: 1px 1px 5px rgb(255, 156, 189);
+}
+
+.menu:hover {
+  background-color: palevioletred;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 5px white;
+  transition: all 0.5s;
+}
+
+li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.sub {
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  border-radius: 0px 0px 40px 40px;
+  border: 1px solid palevioletred;
+  opacity: 0.6;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: palevioletred;
+}
+
+a:hover{
+  color: rgb(194, 0, 65);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#dropDownMenu>.menu>.sub>li {
+  display: none;
+}
+
+#dropDownMenu>.menu:hover>.sub>li {
+  transition: all 1s;
+  display: block;
+}

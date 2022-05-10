@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>삥꾸 계산기(였던 하늘 계산기)</title>
+  <link rel="stylesheet" href="./calculator.css">
+</head>
+
+<body>
+  <h1>계산기를 통해 사칙연산 하고<br />양수인지 음수인지 판별하기</h1>
+  <div id="calform">
+    <input type="text" id="result" placeholder="결과값 " readonly />
+    <input type="text" id="procedure" placeholder="수식을 입력하세요... " readonly /><br /><br />
+    <input type="submit" value="AC" class="fun" id="allclear" onclick="clearAll()" />
+    <input type="submit" value=" " class="blank" />
+    <input type="submit" value="BACK" id="backSpace" class="fun" onclick="backSpace()" />
+    <input type="submit" value="/" class="fun" onclick="add('/')" /><br /><br />
+    <input type="submit" value="7" class="number" onclick="add(7)" />
+    <input type="submit" value="8" class="number" onclick="add(8)" />
+    <input type="submit" value="9" class="number" onclick="add(9)" />
+    <input type="submit" value="*" class="fun" onclick="add('*')" /><br /><br />
+    <input type="submit" value="4" class="number" onclick="add(4)" />
+    <input type="submit" value="5" class="number" onclick="add(5)" />
+    <input type="submit" value="6" class="number" onclick="add(6)" />
+    <input type="submit" value="-" class="fun" onclick="add('-')" /><br /><br />
+    <input type="submit" value="1" class="number" onclick="add(1)" />
+    <input type="submit" value="2" class="number" onclick="add(2)" />
+    <input type="submit" value="3" class="number" onclick="add(3)" />
+    <input type="submit" value="+" class="fun" onclick="add('+')" /><br /><br />
+    <input type="submit" value="0" class="number" id="zero" onclick="add(0)" />
+    <input type="submit" value="." class="fun" onclick="add('.')" />
+    <input type="submit" value="=" class="fun" id="equal" onclick="calculate()" />
+    <button id="submit" onclick="ale()">결과값을 제출해 판별하기</button>
+  </div>
+  <p id="hint">
+    위 버튼을 눌렀을 때, 결과값이 1 이상이면 양수라는 알림창이 뜨고,<br />
+    결과값이 0 미만이면 음수라는 알림창이,<br />
+    결과값이 0이면 0이라는 알림창이 뜹니다.
+  </p>
+  <script src="./calculator.js"></script>
+</body>
+
+</html>

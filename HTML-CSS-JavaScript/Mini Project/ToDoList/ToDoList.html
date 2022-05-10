@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./ToDoList.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script defer src="./ToDoList.js"></script>
+  </head>
+  <body>
+    <div id="capture">
+      <h1 id="todo">💘 To-do List 💘</h1>
+      <div id="line"></div>
+      <div id="oath">
+        <div class="oaths">
+          나 <input id="name" type="text" /> 은(는) 오늘 하루 계획을<br />
+        </div>
+        <div class="oaths">성실히 실천할 것을 맹세합니다</div>
+      </div>
+      <input type="datetime-local" id="datetime" />
+      <div id="list">
+        <div>
+          <div id="import">🔔 중요하게 할 일</div>
+          <input class="lists" type="text" />
+        </div>
+        <div>
+          <input class="lists" type="text" />
+        </div>
+        <div>
+          <input class="lists" type="text" />
+        </div>
+        <div>
+          <input class="lists" type="text" />
+        </div>
+        <div>
+          <input class="lists" type="text" />
+        </div>
+        <div>
+          <div id="need">💎 필요한 일</div>
+          <input class="lists" type="text" />
+        </div>
+        <div>
+          <input class="lists" type="text" />
+        </div>
+        <div>
+          <input class="lists" type="text" />
+        </div>
+
+        <div>
+          <input class="lists" type="text" />
+        </div>
+        <div>
+          <input class="lists" type="text" />
+        </div>
+      </div>
+    </div>
+    <button id="saveBtn">📁 Save</button>
+    <button id="copyBtn">📑 Copy</button>
+
+    <div id="saveAlert" class="alert">
+      저장되었습니다.
+    </div>
+    <div id="copyAlert" class="alert">
+      복사되었습니다.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./comment.css">
+  </head>
+  <body>
+    <section>
+      <div id="img">
+        <img src="/HTML-CSS-JavaScript/Mini-Project/images/Album/Sample/도시.jpg" />
+      </div>
+      <div id="commentBox">
+        <div class="comments"><br>
+        </div>
+        <div id="line"></div>
+        <div id="inputBox">
+          <div class="userInfo">
+            <input type="text" id="nick" placeholder="@NICKNAME" /><br />
+            <input type="text" id="color" placeholder="COLOR"/>
+          </div>
+          <textarea
+            name="comment"
+            id="commentInput"
+            cols="30"
+            rows="10"
+            placeholder="COMMENT..."
+            onkeyup="enter()"
+          ></textarea>
+          <button id="submit" onclick="post()">게시</button>
+        </div>
+      </div>
+    <div id="colorPicker">
+      <button onclick='colorPick(this)'style="background-color:#FFA7A7">#FFA7A7</button>
+      <button onclick='colorPick(this)'style="background-color:#FFC19E">#FFC19E</button>
+      <button onclick='colorPick(this)'style="background-color:#FFE08C">#FFE08C</button><br>
+      <button onclick='colorPick(this)'style="background-color:#FAED7D">#FAED7D</button>
+      <button onclick='colorPick(this)'style="background-color:#CEF279">#CEF279</button>
+      <button onclick='colorPick(this)'style="background-color:#B7F0B1">#B7F0B1</button><br>
+      <button onclick='colorPick(this)'style="background-color:#B2EBF4">#B2EBF4</button>
+      <button onclick='colorPick(this)'style="background-color:#B2CCFF">#B2CCFF</button>
+      <button onclick='colorPick(this)'style="background-color:#B5B2FF">#B5B2FF</button><br>
+      <button onclick='colorPick(this)'style="background-color:#D1B2FF">#D1B2FF</button>
+      <button onclick='colorPick(this)'style="background-color:#FFB2F5">#FFB2F5</button>
+      <button onclick='colorPick(this)'style="background-color:#FFB2D9">#FFB2D9</button>
+    </div>
+    </section>
+    <script src="./comment.js"></script>
+  </body>
+</html>

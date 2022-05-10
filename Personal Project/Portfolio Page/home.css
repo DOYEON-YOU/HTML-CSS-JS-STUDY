@@ -1,0 +1,73 @@
+body{
+  margin: 0px;
+  background-color: black;
+  background-image: url(./images/twinkle.png);
+  background-size:95vw;
+  background-position: center;
+  background-repeat: repeat-y;
+  cursor: url(../cursors/35b1ec3c279a4dc49f1b0d5a9cc163361GRHcVlKrwgY5t8N-0.png), auto;
+}
+
+nav img{
+  margin-left: 5px;
+}
+
+body::-webkit-scrollbar{
+  width: 14px;
+  background-color: #ffffff;
+  cursor: url(../cursors/35b1ec3c279a4dc49f1b0d5a9cc163361GRHcVlKrwgY5t8N-0.png), auto;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 9px;
+  border: 3px solid white;
+  box-shadow: 2px 2px 6px rgb(104, 104, 104);
+}
+
+#navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 70vw;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0;
+  margin: 0 auto;
+  height: 4vh;
+  background-color: rgba(255,255,255,1);
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  box-shadow: 1px 2px 5px gray;
+  border-radius: 10px;
+}
+
+#nav{
+  display: flex;
+  width: 70vw;
+  justify-content: right;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.navEl{
+  cursor: url(../cursors/239bbbae137e4496e61e4e919087fd64lOJhcb1AzsdGjJE2-0.png), auto;
+  padding: 14px;
+}
+
+#container{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.sec{
+  height: 100vh;
+}
