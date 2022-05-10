@@ -1,9 +1,0 @@
-images/
-cursors/
-pagination/
-package-lock
-package.json
-package-lock.json
-node_modules/
-.prettierrc.js
-.eslintrc.js
